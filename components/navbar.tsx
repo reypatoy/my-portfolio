@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 type NavItem = {
     label: string
@@ -11,16 +12,16 @@ type NavItem = {
 
 const navItems: NavItem[] = [
     {
-        label: "Home",
+        label: "About",
         link: "/"
+    },
+    {
+        label: "Skills",
+        link: "#skills"
     },
     {
         label: "Projects",
         link: "/projects"
-    },
-    {
-        label: "Skills",
-        link: "/skills"
     },
     {
         label: "Services",
@@ -38,23 +39,23 @@ const navItems: NavItem[] = [
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-    const [activeLink, setActiveLink] = useState<string | null>('/');
+
+    const pathname = usePathname();
 
   return (
-    <div className="bg-[#1E2938] text-white">
-      <div className="mx-auto flex items-center justify-between py-4 px-8">
-        <div className="text-lg font-bold">
+    <div className="fixed z-50 border-b border-[#223041] bg-[#020B16] text-white w-full">
+      <div className="flex items-center justify-around gap-x-4 py-4 w-full max-sm:px-10 px-40">
+        <div className="text-lg font-bold whitespace-nowrap text-[#F1F5F9]">
           Rey's Portfolio
         </div>
 
-        <nav className="hidden md:block lg:block">
+        <nav className="hidden lg:block">
           <ul className="flex space-x-6">
             {navItems.map((item) => (
               <li key={item.label}>
                 <Link 
                   href={item.link} 
-                  className={`hover:text-[#D1D5DB] ${activeLink === item.link ? 'underline underline-offset-4' : ''}`}
-                  onClick={() => setActiveLink(item.link)}
+                  className={`hover:text-[#D1D5DB] ${pathname === item.link ? 'underline underline-offset-4' : ''}`}
                 >
                   {item.label}
                 </Link>
@@ -64,7 +65,7 @@ export default function Navbar() {
         </nav>
 
         <button
-          className="lg:hidden md:hidden text-xl focus:outline-none hover:cursor-pointer hover:text-[#D1D5DB] relative z-10"
+          className="lg:hidden text-xl focus:outline-none hover:cursor-pointer hover:text-[#D1D5DB] relative z-10"
           onClick={() => setIsOpen(!isOpen)}
         >
           ☰
@@ -72,14 +73,13 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <nav className="border-t border-[#374151] md:hidden lg:hidden absolute top-15 right-0 w-56 bg-[#1E2938] z-10">
+        <nav className="border-t border-[#374151] lg:hidden absolute top-15 right-0 w-full bg-[#1E2938] z-10">
           <ul className="flex flex-col">
             {navItems.map((item) => (
               <li key={item.label}>
                 <Link 
                   href={item.link} 
-                  className={`block px-4 py-3 hover:bg-[#374151] ${activeLink === item.link ? 'underline underline-offset-4' : ''}`}
-                  onClick={() => setActiveLink(item.link)}
+                  className={`block px-4 py-3 text-center hover:bg-[#374151] ${pathname === item.link ? 'underline underline-offset-4' : ''}`}
                 >
                   {item.label}
                 </Link>
