@@ -5,7 +5,7 @@ export default function DynamoDB() {
     return (
         <SkillCard>
             <Image
-                src="/images/dynamodb.png"
+                src="/images/dynamoDB.png"
                 alt="DynamoDB"
                 width={60}
                 height={60}
