@@ -22,6 +22,15 @@ export default function About() {
                     <h1 className="text-[#F1F5F9] font-bold text-3xl">Strong Backend Focus.</h1>
                     <p className="text-[#F1F5F9] font-normal text-md mt-2">Engineering robust, scalable applications from database to interface.</p>
                     <p className="text-[#F1F5F9] font-normal text-md">Skilled in building scalable REST APIs, designing databases, while also capable of delivering responsive front-end features and Managing server deployments.</p>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                        <span className="py-1 px-2 bg-[#F7DF1E] rounded-md text-[#111827]">Javascript</span>
+                        <span className="py-1 px-2 bg-[#3178C6] rounded-md text-[#111827]">Typescript</span>
+                        <span className="py-1 px-2 bg-[#ED8B00] rounded-md text-[#111827]">Java</span>
+                        <span className="py-1 px-2 bg-[#6F42C1] rounded-md text-[#111827]">SQL</span>
+                        <span className="py-1 px-2 bg-[#E34F26] rounded-md text-[#111827]">HTML</span>
+                        <span className="py-1 px-2 bg-[#1572B6] rounded-md text-[#111827]">CSS</span>
+                        <span className="py-1 px-2 bg-[#06B6D4] rounded-md text-[#111827]">Tailwind CSS</span>
+                    </div>
                 </div>
             </div>
         </div>
