@@ -1,18 +1,18 @@
 import Image from "next/image";
 import SkillCard from "./skillCard";
 
-export default function Typescript() {
+export default function Github() {
     return (
         <SkillCard>
             <Image
-                src="/images/typescript.jpeg"
-                alt="Typescript"
+                src="/images/github.png"
+                alt="Github"
                 width={60}
                 height={60}
                 className="object-contain w-auto h-auto max-h-full rounded-sm"
                 priority
             />
-            <h5>Typescript</h5>
+            <h5>GitHub</h5>
         </SkillCard>
     )
 }

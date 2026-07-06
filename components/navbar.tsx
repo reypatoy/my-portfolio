@@ -13,27 +13,27 @@ type NavItem = {
 const navItems: NavItem[] = [
     {
         label: "About",
-        link: "/"
+        link: "/#"
     },
     {
         label: "Skills",
-        link: "#skills"
+        link: "/#skills"
     },
     {
         label: "Projects",
-        link: "/projects"
+        link: "/#projects"
     },
     {
         label: "Services",
-        link: "/services"
+        link: "/#services"
     },
     {
         label: "Experience",
-        link: "/experience"
+        link: "/#experience"
     },
     {
         label: "Contact",
-        link: "/contact"
+        link: "/#contact"
     }
 ]
 
@@ -79,6 +79,7 @@ export default function Navbar() {
               <li key={item.label}>
                 <Link 
                   href={item.link} 
+                  onClick={() => setIsOpen(false)}
                   className={`block px-4 py-3 text-center hover:bg-[#374151] ${pathname === item.link ? 'underline underline-offset-4' : ''}`}
                 >
                   {item.label}
