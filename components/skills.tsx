@@ -1,4 +1,4 @@
-import Card from "./reusables/card";
+import SkillsCard from "./reusables/skillsCard";
 import SpringBoot from "./reusables/springboot";
 import React from "./reusables/react";
 import Vue from "./reusables/vue";
@@ -32,40 +32,40 @@ import AzureDevops from "./reusables/azureDevops";
 
 export default function Skills() {
     return (
-        <div id="skills" className="flex-1 flex flex-col items-center">
+        <div id="skills" className="flex-1 flex flex-col items-center scroll-mt-20">
             <span className="text-[#096472] font-normal text-md">Core Skills</span>
             <h1 className="text-[#F1F5F9] font-bold text-3xl">My Skills & Expertise</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full mt-4">
                 <div className="flex-1 flex flex-row flex-wrap">
-                    <Card title="Backend Frameworks">
+                    <SkillsCard title="Backend Frameworks">
                         <SpringBoot />
                         <Express />
-                    </Card>
+                    </SkillsCard>
                 </div>
                 <div className="flex flex-1 flex-row flex-wrap">
-                    <Card title="Frontend Frameworks">
+                    <SkillsCard title="Frontend Frameworks">
                         <React />
                         <Vue />
                         <Next />
                         <Nuxt />
-                    </Card>
+                    </SkillsCard>
                 </div>
                 <div className="flex-1 flex flex-row flex-wrap">
-                    <Card title="Databases" className="flex flex-row gap-4">
-                        <Card title="Relational Databases" titleClass="text-center" className="flex flex-row gap-2">
+                    <SkillsCard title="Databases" className="flex flex-row gap-4">
+                        <SkillsCard title="Relational Databases" titleClass="text-center" className="flex flex-row gap-2">
                             <MySQL />
                             <PostgreSQL />
                             <Supabase />
-                        </Card>
-                        <Card title="NoSQL Databases" titleClass="text-center">
+                        </SkillsCard>
+                        <SkillsCard title="NoSQL Databases" titleClass="text-center">
                             <MongoDB />
                             <Firebase />
                             <DynamoDB />
-                        </Card>
-                    </Card>
+                        </SkillsCard>
+                    </SkillsCard>
                 </div>
                 <div className="flex flex-1 flex-row flex-wrap">
-                    <Card title="Cloud & DevOps">
+                    <SkillsCard title="Cloud & DevOps">
                         <EC2 />
                         <S3 />
                         <Cognito />
@@ -84,7 +84,7 @@ export default function Skills() {
                         <Nginx /> 
                         <SSM /> 
                         <AzureDevops /> 
-                    </Card>
+                    </SkillsCard>
                 </div>
             </div>
         </div>
