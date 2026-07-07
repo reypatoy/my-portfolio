@@ -1,8 +1,7 @@
 'use client';
 
 import Link from "next/link";
-import { useState } from "react";
-import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 type NavItem = {
     label: string
@@ -13,7 +12,7 @@ type NavItem = {
 const navItems: NavItem[] = [
     {
         label: "About",
-        link: "/#"
+        link: "/"
     },
     {
         label: "Skills",
@@ -38,10 +37,13 @@ const navItems: NavItem[] = [
 ]
 
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [activeLink, setActiveLink] = useState<string>(`/`)
 
-    const pathname = usePathname();
-
+  useEffect(() => {
+    setActiveLink(`/${window.location.hash}`);
+  }, []);
+  
   return (
     <div className="fixed z-50 border-b border-[#223041] bg-[#020B16] text-white w-full">
       <div className="flex items-center justify-around gap-x-4 py-4 w-full max-sm:px-10 px-40">
@@ -55,7 +57,8 @@ export default function Navbar() {
               <li key={item.label}>
                 <Link 
                   href={item.link} 
-                  className={`hover:text-[#D1D5DB] ${pathname === item.link ? 'underline underline-offset-4' : ''}`}
+                  onClick={() => setActiveLink(item.link)}
+                  className={`hover:text-[#D1D5DB] ${activeLink === item.link ? 'underline underline-offset-4' : ''}`}
                 >
                   {item.label}
                 </Link>
@@ -79,8 +82,8 @@ export default function Navbar() {
               <li key={item.label}>
                 <Link 
                   href={item.link} 
-                  onClick={() => setIsOpen(false)}
-                  className={`block px-4 py-3 text-center hover:bg-[#374151] ${pathname === item.link ? 'underline underline-offset-4' : ''}`}
+                  onClick={() => (setIsOpen(false), setActiveLink(item.link))}
+                  className={`block px-4 py-3 text-center hover:bg-[#374151] ${activeLink === item.link ? 'underline underline-offset-4' : ''}`}
                 >
                   {item.label}
                 </Link>
