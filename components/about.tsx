@@ -19,10 +19,10 @@ export default function About() {
             <div className="text-left flex-1 h-full flex lg:items-center">
                 <div className="w-full">
                     <h2 className="font-bold text-2xl text-[#096472]">Hi, I'm Rey.</h2>
-                    <h1 className="text-[#F1F5F9] font-bold text-3xl">Full-Stack Web Developer.</h1>
-                    <h1 className="text-[#F1F5F9] font-bold text-3xl">Strong Backend Focus.</h1>
-                    <p className="text-[#F1F5F9] font-normal text-md mt-2">Engineering robust, scalable applications from database to interface.</p>
-                    <p className="text-[#F1F5F9] font-normal text-md">Skilled in building scalable REST APIs, designing databases, while also capable of delivering responsive front-end features and Managing server deployments.</p>
+                    <h1 className="text-slate-400 font-bold text-3xl">Full-Stack Web Developer.</h1>
+                    <h1 className="text-slate-400 font-bold text-3xl">Strong Backend Focus.</h1>
+                    <p className="text-slate-400 font-normal text-md mt-2">Engineering robust, scalable applications from database to interface.</p>
+                    <p className="text-slate-400 font-normal text-md">Skilled in building scalable REST APIs, designing databases, while also capable of delivering responsive front-end features and Managing server deployments.</p>
                     <div className="flex flex-wrap gap-2 mt-2">
                         <TechsCard bgColor="#F7DF1E" text="Javascript" />
                         <TechsCard bgColor="#3178C6" text="Typescript" />
