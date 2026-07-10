@@ -13,12 +13,12 @@ export const mailService = {
                    message: body.message
                })
            })
-           if(!response.ok) return { success: false, errorMessage: "An error occured while sending email" }
+           if(!response.ok) return { success: false, errorMessage: (await response.json()).message }
 
            return { success: true }
         } catch(e) {
             logger.error("An error occured while sending email", e)
-            return { success: false, errorMessage: "An error occured while sending email" }
+            return { success: false, errorMessage: e as string }
         }
     }
 }

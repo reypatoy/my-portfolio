@@ -28,10 +28,6 @@ export default function Connect() {
     
     useEffect(() => {
         if(status === 'idle') {
-            setName('')
-            setEmail('')
-            setSubject('')
-            setMessage('')
             return
         }
 
@@ -43,6 +39,10 @@ export default function Connect() {
         } 
 
         if(status === 'success') {
+            setName('')
+            setEmail('')
+            setSubject('')
+            setMessage('')
             setSnackbar({
                 message: "Your message has been sent successfully!",
                 type: "success",
