@@ -27,7 +27,13 @@ export default function Connect() {
     }
     
     useEffect(() => {
-        if(status === 'idle') return 
+        if(status === 'idle') {
+            setName('')
+            setEmail('')
+            setSubject('')
+            setMessage('')
+            return
+        }
 
         if(status === 'error') {
             setSnackbar({
