@@ -31,8 +31,8 @@ const navItems: NavItem[] = [
         link: "/#experience"
     },
     {
-        label: "Contact",
-        link: "/#contact"
+        label: "Let's Connect",
+        link: "/#connect"
     }
 ]
 
@@ -47,7 +47,7 @@ export default function Navbar() {
   return (
     <div className="fixed z-50 border-b border-[#223041] bg-[#020B16] text-white w-full">
       <div className="flex items-center justify-around gap-x-4 py-4 w-full max-sm:px-10 px-40">
-        <div className="text-lg font-bold whitespace-nowrap text-[#F1F5F9]">
+        <div onClick={() => window.location.href = '/' }className="text-lg font-bold whitespace-nowrap text-slate-400 hover:text-slate-300 cursor-pointer">
           Rey's Portfolio
         </div>
 
@@ -58,7 +58,7 @@ export default function Navbar() {
                 <Link 
                   href={item.link} 
                   onClick={() => setActiveLink(item.link)}
-                  className={`hover:text-[#D1D5DB] ${activeLink === item.link ? 'underline underline-offset-4' : ''}`}
+                  className={`hover:text-slate-300 text-slate-400 ${activeLink === item.link ? 'underline underline-offset-4' : ''}`}
                 >
                   {item.label}
                 </Link>
@@ -83,7 +83,7 @@ export default function Navbar() {
                 <Link 
                   href={item.link} 
                   onClick={() => (setIsOpen(false), setActiveLink(item.link))}
-                  className={`block px-4 py-3 text-center hover:bg-[#374151] ${activeLink === item.link ? 'underline underline-offset-4' : ''}`}
+                  className={`block px-4 py-3 text-center !text-slate-400 hover:bg-[#374151] ${activeLink === item.link ? 'underline underline-offset-4' : ''}`}
                 >
                   {item.label}
                 </Link>

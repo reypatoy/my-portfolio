@@ -4,7 +4,7 @@ import ProjectTechsCard from "./reusables/projectTechsCard";
 export default function Projects() {
     return (
         <div id="projects" className="flex-1 flex flex-col items-center scroll-mt-20">
-            <h1 className="text-[#F1F5F9] font-bold text-3xl">Projects</h1>
+            <h1 className="text-slate-400 font-bold text-3xl">Projects</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full mt-4">
                 <div className="flex-1 flex flex-row flex-wrap">
                     <ProjectCard title="Backlog-Buddy (November 2025 - May 2026)" className="">
