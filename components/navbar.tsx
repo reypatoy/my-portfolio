@@ -31,8 +31,8 @@ const navItems: NavItem[] = [
         link: "/#experience"
     },
     {
-        label: "Let's Connect",
-        link: "/#connect"
+        label: "Contact",
+        link: "/#contact"
     }
 ]
 
@@ -47,7 +47,7 @@ export default function Navbar() {
   return (
     <div className="fixed z-50 border-b border-[#223041] bg-[#020B16] text-white w-full">
       <div className="flex items-center justify-around gap-x-4 py-4 w-full max-sm:px-10 px-40">
-        <div onClick={() => window.location.href = '/' }className="text-lg font-bold whitespace-nowrap text-slate-400 hover:text-slate-300 cursor-pointer">
+        <div onClick={() => window.location.href = '/' }className="text-lg font-bold whitespace-nowrap text-[#9CA3AF] hover:text-slate-300 cursor-pointer">
           Rey's Portfolio
         </div>
 
@@ -55,13 +55,13 @@ export default function Navbar() {
           <ul className="flex space-x-6">
             {navItems.map((item) => (
               <li key={item.label}>
-                <Link 
+                <a 
                   href={item.link} 
                   onClick={() => setActiveLink(item.link)}
-                  className={`hover:text-slate-300 text-slate-400 ${activeLink === item.link ? 'underline underline-offset-4' : ''}`}
+                  className={`hover:text-slate-300 text-[#9CA3AF] ${activeLink === item.link ? 'underline underline-offset-4' : ''}`}
                 >
                   {item.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -80,13 +80,13 @@ export default function Navbar() {
           <ul className="flex flex-col">
             {navItems.map((item) => (
               <li key={item.label}>
-                <Link 
+                <a 
                   href={item.link} 
                   onClick={() => (setIsOpen(false), setActiveLink(item.link))}
-                  className={`block px-4 py-3 text-center !text-slate-400 hover:bg-[#374151] ${activeLink === item.link ? 'underline underline-offset-4' : ''}`}
+                  className={`block px-4 py-3 text-center !text-[#9CA3AF] hover:bg-[#374151] ${activeLink === item.link ? 'underline underline-offset-4' : ''}`}
                 >
                   {item.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

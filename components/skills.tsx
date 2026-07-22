@@ -9,37 +9,31 @@ import PostgreSQL from "./reusables/postgreSQL";
 import Supabase from "./reusables/supabase";
 import MongoDB from "./reusables/mongoDB";
 import Firebase from "./reusables/firebase";
-import EC2 from "./reusables/ec2";
-import S3 from "./reusables/s3";
-import Cognito from "./reusables/cognito";
+import EC2 from "./reusables/aws";
 import Express from "./reusables/express";
-import Batch from "./reusables/batch";
 import Github from "./reusables/github";
 import Bitbucket from "./reusables/bitbucket";
 import Jira from "./reusables/jira";
 import CICD from "./reusables/cicd";
 import Docker from "./reusables/docker";
-import RDS from "./reusables/rds";
 import DynamoDB from "./reusables/dynamoDB";
-import Fargate from "./reusables/fargate";
-import ECR from "./reusables/ecr";
-import VPC from "./reusables/vpc";
 import Upstash from "./reusables/upstash";
-import LoadBalancer from "./reusables/loadBalancer";
-import Nginx from "./reusables/nginx";
-import SSM from "./reusables/ssm";
 import AzureDevops from "./reusables/azureDevops";
+import AWS from "./reusables/aws";
+import Vercel from "./reusables/vercel";
 
 export default function Skills() {
     return (
         <div id="skills" className="flex-1 flex flex-col items-center scroll-mt-20">
-            <span className="text-[#096472] font-normal text-md">Core Skills</span>
-            <h1 className="text-slate-400 font-bold text-3xl">My Skills & Expertise</h1>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full mt-4">
+            <div className="flex flex-col items-center justify-center py-4 px-20 border-t-1 border-b-1">
+                <span className="text-[#096472] font-normal text-md">Core Skills</span>
+                <h1 className="text-[#9CA3AF] font-bold text-3xl">Skills & Expertise</h1>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full mt-15">
                 <div className="flex-1 flex flex-row flex-wrap">
                     <SkillsCard title="Backend Frameworks">
-                        <SpringBoot />
                         <Express />
+                        <SpringBoot />
                     </SkillsCard>
                 </div>
                 <div className="flex flex-1 flex-row flex-wrap">
@@ -66,23 +60,14 @@ export default function Skills() {
                 </div>
                 <div className="flex flex-1 flex-row flex-wrap">
                     <SkillsCard title="Cloud & DevOps">
-                        <EC2 />
-                        <S3 />
-                        <Cognito />
-                        <Batch />
+                        <AWS />
+                        <Vercel />
                         <Github />
                         <Bitbucket />
                         <Jira />
                         <CICD />
                         <Docker />
-                        <RDS /> 
-                        <Fargate /> 
-                        <ECR /> 
-                        <VPC /> 
                         <Upstash /> 
-                        <LoadBalancer /> 
-                        <Nginx /> 
-                        <SSM /> 
                         <AzureDevops /> 
                     </SkillsCard>
                 </div>

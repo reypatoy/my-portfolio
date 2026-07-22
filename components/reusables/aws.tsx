@@ -1,18 +1,20 @@
 import Image from "next/image";
 import SkillCard from "./skillCard";
+import Rating from "./rating";
 
-export default function SSM() {
+export default function AWS() {
     return (
         <SkillCard>
             <Image
-                src="/images/ssm.png"
-                alt="SSM"
-                width={60}
-                height={60}
+                src="/images/aws.png"
+                alt="AWS"
+                width={100}
+                height={100}
                 className="object-contain w-auto h-auto max-h-full rounded-sm"
                 priority
             />
-            <h5>SSM</h5>
+            <h5 className="text-lg">AWS</h5>
+            <Rating rate={3} />
         </SkillCard>
     )
 }

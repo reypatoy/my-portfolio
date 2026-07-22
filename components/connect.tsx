@@ -54,10 +54,10 @@ export default function Connect() {
 
 
     return (
-        <div id="connect" className="flex flex-col justify-center items-center scroll-mt-20 gap-4 w-full mt-4 bg-[#020B16] border border-[#223041] rounded-lg px-4 py-10 shadow-[0_0_20px_rgba(34,48,65,0.35),inset_0_0_10px_rgba(34,48,65,0.2)]">
-            <h1 className="text-slate-400 font-bold text-3xl font-sans tracking-tight">Get in Touch</h1>
-            <span className="text-slate-500 mb-6">I'd love to hear from you</span>
-            <div className="flex justify-center flex-col w-2/3 bg-[#020B16] gap-4">
+        <div id="contact" className="flex flex-col justify-center items-center scroll-mt-20 gap-4 w-full mt-4 bg-[#020B16] border border-[#223041] rounded-lg px-4 py-10 shadow-[0_0_20px_rgba(34,48,65,0.35),inset_0_0_10px_rgba(34,48,65,0.2)]">
+            <h1 className="text-[#9CA3AF] font-bold text-3xl font-sans tracking-tight">Get in Touch</h1>
+            <span className="text-[#9CA3AF] mb-6 text-lg">I'd love to hear from you</span>
+            <div className="flex justify-center flex-col w-2/3 bg-[#020B16] gap-4 mt-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <div>
                         <TextInput 
@@ -89,7 +89,8 @@ export default function Connect() {
                     setValue={ setMessage }
                 />
                 <Button label="Send Message" type="button" onClick={ handleSendMessage } isLoading={ status === 'sending' }/>
-                <span className="text-center font-xs text-slate-500 mt-4 font-">I typically respond within 24 hours</span>
+                <span className="text-center font-xs text-[#9CA3AF]] mt-4 font-">Thank you!</span>
+                <span className="text-center font-xs text-[#9CA3AF]] mt-1 font-">I'll reply within 24 hours.</span>
             </div>
             {snackbar && (
                 <Snackbar

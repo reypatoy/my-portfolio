@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SkillCard from "./skillCard";
+import Rating from "./rating";
 
 export default function Jira() {
     return (
@@ -12,7 +13,8 @@ export default function Jira() {
                 className="object-contain w-auto h-auto max-h-full rounded-sm"
                 priority
             />
-            <h5>Jira</h5>
+            <h5 className="text-lg">Jira</h5>
+            <Rating rate={4} />
         </SkillCard>
     )
 }
