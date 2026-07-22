@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SkillCard from "./skillCard";
+import Rating from "./rating";
 
 export default function React() {
     return (
@@ -12,7 +13,8 @@ export default function React() {
                 className="object-contain w-auto h-auto max-h-full rounded-sm"
                 priority
             />
-            <h5>ReactJs</h5>
+            <h5 className="text-lg">ReactJs</h5>
+            <Rating rate={4} />
         </SkillCard>
     )
 }

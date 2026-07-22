@@ -20,7 +20,8 @@ export default function Button({ label, type, onClick, isLoading }: ButtonProps)
                 text-white
                 transition-all
                 duration-200
-                
+                text-[#9CA3AF]
+                hover:scale-101
                 w-full
             `}
         >

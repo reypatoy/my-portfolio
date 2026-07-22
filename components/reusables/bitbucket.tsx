@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SkillCard from "./skillCard";
+import Rating from "./rating";
 
 export default function Bitbucket() {
     return (
@@ -12,7 +13,8 @@ export default function Bitbucket() {
                 className="object-contain w-auto h-auto max-h-full rounded-sm"
                 priority
             />
-            <h5>Bitbucket</h5>
+            <h5 className="text-lg">Bitbucket</h5>
+            <Rating rate={3} />
         </SkillCard>
     )
 }

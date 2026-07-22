@@ -9,7 +9,7 @@ type TextAAreaProps = {
 export default function TextArea({ label, placeHolder, setValue, value }: TextAAreaProps) {
     return (
         <div className="flex-1">
-            <label className="mb-2 block text-md font-medium text-slate-400">{ label }</label>
+            <label className="mb-2 block text-lg font-medium text-[#9CA3AF]">{ label }</label>
             <textarea
                 rows={6}
                 placeholder={ placeHolder }
@@ -23,8 +23,9 @@ export default function TextArea({ label, placeHolder, setValue, value }: TextAA
                     bg-slate-900/60
                     px-4
                     py-3
-                    text-slate-100
-                    placeholder:text-slate-500
+                    text-[#9CA3AF]
+                    text-lg
+                    placeholder:text-[#9CA3AF]
                     outline-none
                     transition-all
                     duration-200

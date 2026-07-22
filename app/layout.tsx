@@ -83,7 +83,7 @@ export default function RootLayout({
     >
       <body className="min-h-full w-screen flex flex-col">
         <Navbar />
-        <div className="w-full bg-[#020B16] flex-1 flex justify-center max-sm:px-10 px-40 mt-16">
+        <div className="w-full bg-[#020B16] flex-1 flex justify-center max-sm:px-10 px-30 mt-16">
             {children}
         </div>
         </body>
