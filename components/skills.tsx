@@ -9,7 +9,6 @@ import PostgreSQL from "./reusables/postgreSQL";
 import Supabase from "./reusables/supabase";
 import MongoDB from "./reusables/mongoDB";
 import Firebase from "./reusables/firebase";
-import EC2 from "./reusables/aws";
 import Express from "./reusables/express";
 import Github from "./reusables/github";
 import Bitbucket from "./reusables/bitbucket";
