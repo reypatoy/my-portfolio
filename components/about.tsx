@@ -22,8 +22,7 @@ export default function About() {
                     <h2 className="font-bold text-4xl text-[#096472]">Hi, I'm Rey.</h2>
                     <h1 className="text-[#9CA3AF] font-bold text-5xl mt-3">Full-Stack Software Engineer.</h1>
                     <h1 className="text-[#9CA3AF] font-bold text-3xl mt-3">Building scalable backend systems, REST APIs, AI-powered applications, and modern web platforms with over 3 years of professional experience.</h1>
-                    <p className="text-[#9CA3AF] font-normal text-lg mt-3">Specialized in Node.js, Spring Boot, Next.js, PostgreSQL, AWS, and AI integrations.</p>
-                    <p className="text-[#9CA3AF] font-normal text-lg mt-1">Designing databases, while also capable of delivering responsive front-end features and Managing server deployments. <Link className="transition-all text-cyan-600 underline hover:text-cyan-300" href="/#contact">Let's connect</Link></p>
+                    <p className="text-[#9CA3AF] font-normal text-lg mt-3">Specialized in Node.js, Spring Boot, Next.js, PostgreSQL, AWS, and AI integrations, you can download my resume <Link className="transition-all text-cyan-600 hover:text-cyan-300 hover:underline" href={String(process.env.RESUME_DOWNLOAD_LINK)}>here</Link>.</p>
                     <div className="flex flex-wrap gap-2 mt-2">
                         <TechsCard bgColor="#8BC500" text="NodeJs" />
                         <TechsCard bgColor="#77BA1D" text="Springboot" />
@@ -34,8 +33,9 @@ export default function About() {
                         <TechsCard bgColor="#FF9900" text="AWS" />
                     </div>
                     <div className="flex gap-4 py-4">
-                        <Link className="transition-all text-cyan-600 hover:text-cyan-300 hover:underline" href={String(process.env.GITHUB_PROFILE)} target="_blank">[ Github Profile ]</Link>
-                        <Link className="transition-all text-cyan-600 hover:text-cyan-300 hover:underline" href={String(process.env.RESUME_DOWNLOAD_LINK)}>[ Download Resume ]</Link>
+                        <Link className="transition-all text-cyan-600 hover:text-cyan-300 hover:underline" href={String(process.env.LINKED_IN_PROFILE)} rel="noopener noreferrer" target="_blank">[ Linkedin Profile ]</Link>
+                        <Link className="transition-all text-cyan-600 hover:text-cyan-300 hover:underline" href={String(process.env.GITHUB_PROFILE)} rel="noopener noreferrer" target="_blank">[ Github Profile ]</Link>
+                        <Link className="transition-all text-cyan-600 hover:text-cyan-300 hover:underline" href="/#contact">[ Hire Me ]</Link>
                     </div>
                 </div>
             </div>
