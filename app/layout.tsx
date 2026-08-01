@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: `${process.env.NAME} Portfolio`,
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: `${process.env.NAME} Portfolio`,
