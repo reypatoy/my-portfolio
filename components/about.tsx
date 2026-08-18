@@ -35,7 +35,7 @@ export default function About() {
                     <div className="flex gap-4 py-4">
                         <Link className="transition-all text-cyan-600 hover:text-cyan-300 hover:underline" href={String(process.env.LINKED_IN_PROFILE)} rel="noopener noreferrer" target="_blank">[ Linkedin Profile ]</Link>
                         <Link className="transition-all text-cyan-600 hover:text-cyan-300 hover:underline" href={String(process.env.GITHUB_PROFILE)} rel="noopener noreferrer" target="_blank">[ Github Profile ]</Link>
-                        <Link className="transition-all text-cyan-600 hover:text-cyan-300 hover:underline" href="/#contact">[ Hire Me ]</Link>
+                        <Link className="transition-all text-cyan-600 hover:text-cyan-300 hover:underline" href="/#hire-me">[ Hire Me ]</Link>
                     </div>
                 </div>
             </div>
