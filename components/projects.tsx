@@ -22,7 +22,7 @@ export default function Projects() {
                     </ProjectCard>
                 </div>
                 <div className="flex flex-1 flex-row flex-wrap">
-                    <ProjectCard title="AI Blog Generation (August 2025 - Present)">
+                    <ProjectCard title="AI Blog Generation (August 2025 - August 2026)">
                         <p className="text-lg">Refactor existing openai api request replace with LangChain4j to handle multi ai providers.</p>
                         <div className="flex flex-wrap gap-2">
                             <ProjectTechsCard text="Springboot"/>
@@ -36,7 +36,7 @@ export default function Projects() {
                     </ProjectCard>
                 </div>
                 <div className="flex-1 flex flex-row flex-wrap">
-                    <ProjectCard title="Map Engine Optimization Report (October 2025 - Present)" className="">
+                    <ProjectCard title="Map Engine Optimization Report (October 2025 - August 2026)" className="">
                         <p className="text-lg">Migrate from Openai assistant into Openai responses api due to assistant depreciation, and Implement SSE both frontend and backend for real time data updates. Optimize the performance to use only less ram during the process and Investigating and fixing server configuration issues during deployment.</p>
                         <div className="flex flex-wrap gap-2">
                             <ProjectTechsCard text="Sprintboot"/>
@@ -48,7 +48,7 @@ export default function Projects() {
                     </ProjectCard>
                 </div>
                 <div className="flex flex-1 flex-row flex-wrap">
-                    <ProjectCard title="Treasure Keyword Search (May 2025 - Present)">
+                    <ProjectCard title="Treasure Keyword Search (May 2025 - August 2026)">
                         <p className="text-lg">Interact with the client and understand the specifications provided and make a plan and implement the feature. Investigate for third party APIs that the client requested for integration and manage system deployment.</p>
                         <div className="flex flex-wrap gap-2">
                             <ProjectTechsCard text="NodeJs"/>
@@ -63,7 +63,7 @@ export default function Projects() {
                     </ProjectCard>
                 </div>
                 <div className="flex-1 flex flex-row flex-wrap">
-                    <ProjectCard title="Search Engine Optimization Keyword Monitoring (November 2024 - Present)" className="">
+                    <ProjectCard title="Search Engine Optimization Keyword Monitoring (November 2024 - August 2026)" className="">
                         <p className="text-lg">Understand the specifications provided, make a plan and implement the feature. Manage the server deployment both staging and production.</p>
                         <div className="flex flex-wrap gap-2">
                             <ProjectTechsCard text="NuxtJs"/>
