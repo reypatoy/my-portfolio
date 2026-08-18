@@ -31,8 +31,8 @@ const navItems: NavItem[] = [
         link: "/#experience"
     },
     {
-        label: "Contact",
-        link: "/#contact"
+        label: "Hire Me",
+        link: "/#hire-me"
     }
 ]
 

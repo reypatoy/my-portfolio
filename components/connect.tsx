@@ -54,8 +54,8 @@ export default function Connect() {
 
 
     return (
-        <div id="contact" className="flex flex-col justify-center items-center scroll-mt-20 gap-4 w-full mt-4 bg-[#020B16] border border-[#223041] rounded-lg px-4 py-10 shadow-[0_0_20px_rgba(34,48,65,0.35),inset_0_0_10px_rgba(34,48,65,0.2)]">
-            <h1 className="text-[#9CA3AF] font-bold text-3xl font-sans tracking-tight">Get in Touch</h1>
+        <div id="hire-me" className="flex flex-col justify-center items-center scroll-mt-20 gap-4 w-full mt-4 bg-[#020B16] border border-[#223041] rounded-lg px-4 py-10 shadow-[0_0_20px_rgba(34,48,65,0.35),inset_0_0_10px_rgba(34,48,65,0.2)]">
+            <h1 className="text-[#9CA3AF] font-bold text-3xl font-sans tracking-tight">Hire Me</h1>
             <span className="text-[#9CA3AF] mb-6 text-lg">I'd love to hear from you</span>
             <div className="flex justify-center flex-col w-2/3 bg-[#020B16] gap-4 mt-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
