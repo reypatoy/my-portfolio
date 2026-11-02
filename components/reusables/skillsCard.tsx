@@ -1,7 +1,7 @@
 export default function SkillsCard({ title, children, titleClass = "", className = "" }: { title: string; children: React.ReactNode; titleClass?: string; className?: string }) {
     return (
-        <div className="flex-1 bg-[#020B16] border border-[#223041] rounded-lg pl-6 p-4 w-full shadow-[0_0_20px_rgba(34,48,65,0.35),inset_0_0_10px_rgba(34,48,65,0.2)]">    
-            <h1 className={`pb-4 text-2xl font-semibold ${titleClass}`}>{ title }</h1>
+        <div className="flex h-full w-full flex-col rounded-2xl border border-slate-800/80 bg-slate-950/80 p-5 shadow-[0_24px_60px_rgba(15,23,42,0.38)]">
+            <h1 className={`pb-4 text-xl font-bold tracking-tight text-white md:text-2xl ${titleClass}`}>{ title }</h1>
             <div className={`flex flex-row flex-wrap justify-around gap-2 ${className}`}>
                 { children }
             </div>

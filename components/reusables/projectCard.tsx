@@ -1,8 +1,8 @@
 export default function ProjectCard({ title, children, titleClass = "", className = "" }: { title: string; children: React.ReactNode; titleClass?: string; className?: string }) {
     return (
-        <div className="flex-1 bg-[#020B16] flex flex-col hover:-translate-y-1 transition-all duration-300 hover:shadow-cyan-500/20 border border-[#223041] rounded-lg p-4 w-full shadow-[0_0_20px_rgba(34,48,65,0.35),inset_0_0_10px_rgba(34,48,65,0.2)]">    
-            <h1 className={`pb-2 text-2xl font-semibold ${titleClass}`}>{ title }</h1>
-            <div className={`flex flex-col gap-2 ${className}`}>
+        <div className="flex h-full w-full flex-col rounded-2xl border border-slate-800/80 bg-slate-950/80 p-5 shadow-[0_24px_60px_rgba(15,23,42,0.38)] transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_24px_80px_rgba(34,211,238,0.12)]">
+            <h1 className={`pb-3 text-xl font-bold tracking-tight text-white md:text-2xl ${titleClass}`}>{ title }</h1>
+            <div className={`flex flex-col gap-3 ${className}`}>
                 { children }
             </div>
         </div>

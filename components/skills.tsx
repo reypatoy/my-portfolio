@@ -23,19 +23,19 @@ import Vercel from "./reusables/vercel";
 
 export default function Skills() {
     return (
-        <div id="skills" className="flex-1 flex flex-col items-center scroll-mt-20">
-            <div className="flex flex-col items-center justify-center py-4 px-20 border-t-1 border-b-1">
-                <span className="text-[#096472] font-normal text-md">Core Skills</span>
-                <h1 className="text-[#9CA3AF] font-bold text-3xl">Skills & Expertise</h1>
+        <section id="skills" className="section-shell scroll-mt-24 pt-8 md:pt-12">
+            <div className="section-header">
+                <span className="eyebrow">Core Skills</span>
+                <h1 className="section-title">Skills & Expertise</h1>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full mt-15">
-                <div className="flex-1 flex flex-row flex-wrap">
+            <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
+                <div className="flex-1">
                     <SkillsCard title="Backend Frameworks">
                         <Express />
                         <SpringBoot />
                     </SkillsCard>
                 </div>
-                <div className="flex flex-1 flex-row flex-wrap">
+                <div className="flex-1">
                     <SkillsCard title="Frontend Frameworks">
                         <React />
                         <Vue />
@@ -43,21 +43,31 @@ export default function Skills() {
                         <Nuxt />
                     </SkillsCard>
                 </div>
-                <div className="flex-1 flex flex-row flex-wrap">
-                    <SkillsCard title="Databases" className="flex flex-row gap-4">
-                        <SkillsCard title="Relational Databases" titleClass="text-center" className="flex flex-row gap-2">
-                            <MySQL />
-                            <PostgreSQL />
-                            <Supabase />
-                        </SkillsCard>
-                        <SkillsCard title="NoSQL Databases" titleClass="text-center">
-                            <MongoDB />
-                            <Firebase />
-                            <DynamoDB />
-                        </SkillsCard>
+                <div className="flex-1">
+                    <SkillsCard title="Databases">
+                        <div className="flex w-full flex-col gap-4 md:flex-row">
+                            <SkillsCard
+                                title="Relational Databases"
+                                titleClass="text-center"
+                                className="flex flex-row flex-wrap justify-center gap-2"
+                            >
+                                <MySQL />
+                                <PostgreSQL />
+                                <Supabase />
+                            </SkillsCard>
+                            <SkillsCard
+                                title="NoSQL Databases"
+                                titleClass="text-center"
+                                className="flex flex-row flex-wrap justify-center gap-2"
+                            >
+                                <MongoDB />
+                                <Firebase />
+                                <DynamoDB />
+                            </SkillsCard>
+                        </div>
                     </SkillsCard>
                 </div>
-                <div className="flex flex-1 flex-row flex-wrap">
+                <div className="flex-1">
                     <SkillsCard title="Cloud & DevOps">
                         <AWS />
                         <Vercel />
@@ -71,6 +81,6 @@ export default function Skills() {
                     </SkillsCard>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

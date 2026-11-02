@@ -51,46 +51,58 @@ export default function Connect() {
         setTimeout(() => setSnackbar(null), 5000);
     }, [status])
 
-
-
     return (
-        <div id="hire-me" className="flex flex-col justify-center items-center scroll-mt-20 gap-4 w-full mt-4 bg-[#020B16] border border-[#223041] rounded-lg px-4 py-10 shadow-[0_0_20px_rgba(34,48,65,0.35),inset_0_0_10px_rgba(34,48,65,0.2)]">
-            <h1 className="text-[#9CA3AF] font-bold text-3xl font-sans tracking-tight">Hire Me</h1>
-            <span className="text-[#9CA3AF] mb-6 text-lg">I'd love to hear from you</span>
-            <div className="flex justify-center flex-col w-2/3 bg-[#020B16] gap-4 mt-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                    <div>
+        <section id="hire-me" className="section-shell scroll-mt-20">
+            <div className="glass-panel rounded-[28px] border border-slate-800/80 px-4 py-8 sm:px-6 md:px-10 md:py-12">
+                <div className="mx-auto max-w-3xl text-center">
+                    <span className="eyebrow">Let&apos;s Build</span>
+                    <h1 className="mt-3 text-3xl font-black tracking-tight text-white md:text-5xl">Hire Me</h1>
+                    <p className="mt-3 text-base text-slate-300 md:text-lg">I&apos;d love to hear from you.</p>
+                </div>
+
+                <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-slate-800 bg-slate-950/60 p-4 sm:p-6">
+                    <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+                        <div>
+                            <TextInput 
+                                label="Name"
+                                placeHolder="John Doe"
+                                value={ name }
+                                setValue={ setName }
+                            />
+                        </div>
+                        <div>
+                            <TextInput 
+                                label="Email"
+                                placeHolder="john@example.com"
+                                value={ email }
+                                setValue={ setEmail }
+                            />
+                        </div>
+                    </div>
+                    <div className="mt-4">
                         <TextInput 
-                            label="Name"
-                            placeHolder="John Doe"
-                            value={ name }
-                            setValue={ setName }
+                            label="Subject"
+                            placeHolder="How can I help"
+                            value={ subject }
+                            setValue={ setSubject }
                         />
                     </div>
-                    <div>
-                        <TextInput 
-                            label="Email"
-                            placeHolder="john@example.com"
-                            value={ email }
-                            setValue={ setEmail }
+                    <div className="mt-4">
+                        <TextArea 
+                            label="Message"
+                            placeHolder="Tell me about your project..."
+                            value={ message }
+                            setValue={ setMessage }
                         />
+                    </div>
+                    <div className="mt-5">
+                        <Button label="Send Message" type="button" onClick={ handleSendMessage } isLoading={ status === 'sending' }/>
+                    </div>
+                    <div className="mt-5 text-center text-sm text-slate-300">
+                        <p>Thank you!</p>
+                        <p className="mt-1">I&apos;ll reply within 24 hours.</p>
                     </div>
                 </div>
-                <TextInput 
-                    label="Subject"
-                    placeHolder="How can I help"
-                    value={ subject }
-                    setValue={ setSubject }
-                />
-                <TextArea 
-                    label="Message"
-                    placeHolder="Tell me about your project..."
-                    value={ message }
-                    setValue={ setMessage }
-                />
-                <Button label="Send Message" type="button" onClick={ handleSendMessage } isLoading={ status === 'sending' }/>
-                <span className="text-center font-xs text-[#9CA3AF]] mt-4 font-">Thank you!</span>
-                <span className="text-center font-xs text-[#9CA3AF]] mt-1 font-">I'll reply within 24 hours.</span>
             </div>
             {snackbar && (
                 <Snackbar
@@ -98,6 +110,6 @@ export default function Connect() {
                     type={snackbar.type}
                 />
             )}
-        </div>
+        </section>
     )
 }

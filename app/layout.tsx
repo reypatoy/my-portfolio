@@ -82,13 +82,15 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full w-screen flex flex-col">
+      <body className="min-h-screen overflow-x-hidden bg-slate-950 text-slate-100 antialiased">
         <Navbar />
-        <div className="w-full bg-[#020B16] flex-1 flex justify-center max-sm:px-10 px-30 mt-16">
+        <div className="w-full pt-24">
+          <div className="mx-auto w-full max-w-[1400px] px-4 sm:px-6 lg:px-8">
             {children}
             <Analytics />
+          </div>
         </div>
-        </body>
+      </body>
     </html>
   );
 }
