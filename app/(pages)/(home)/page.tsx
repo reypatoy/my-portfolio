@@ -6,11 +6,10 @@ import Projects from "@/components/projects";
 import Services from "@/components/services";
 import Skills from "@/components/skills";
 
-
 export default function Page() {
     return (
-        <div className="flex-1 flex flex-col justify-center pb-5">
-            <div className="flex-1 flex flex-col justify-center gap-y-40 pb-5">
+        <main className="w-full pb-8">
+            <div className="space-y-16 md:space-y-20">
                 <About />
                 <Skills />
                 <Projects />
@@ -19,6 +18,6 @@ export default function Page() {
                 <Connect />
             </div>
             <Footer />
-        </div>
+        </main>
     )
 }

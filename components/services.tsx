@@ -2,9 +2,12 @@ import ServiceCard from "./reusables/serviceCard";
 
 export default function Services() {
     return (
-        <div id="services" className="flex-1 flex flex-col items-center scroll-mt-20">
-            <h1 className="text-[#9CA3AF] font-bold text-3xl py-4 px-20 border-t-1 border-b-1">Services</h1>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full mt-15">
+        <section id="services" className="section-shell scroll-mt-24 pt-8 md:pt-12">
+            <div className="section-header">
+                <span className="eyebrow">What I Deliver</span>
+                <h1 className="section-title">Services</h1>
+            </div>
+            <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
                 <div className="flex-1 flex flex-row flex-wrap">
                     <ServiceCard title="Full-Stack Web Developer" className="">
                         <p className="text-lg">Build high performance APIs</p>
@@ -66,6 +69,6 @@ export default function Services() {
                     </ServiceCard>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
