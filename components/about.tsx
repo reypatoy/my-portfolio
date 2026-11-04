@@ -32,11 +32,11 @@ export default function About() {
                             </div>
 
                             <p className="max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
-                                Building scalable backend systems, REST APIs, AI-powered applications, and modern web platforms with 4 years of professional experience.
+                                Building scalable backend systems, REST APIs, and high-performance web platforms. I also use AI to assist coding and integrate AI workflows with Claude, MCP tools, and modern automation to move faster without sacrificing quality.
                             </p>
 
                             <p className="text-base leading-relaxed text-slate-400">
-                                Specialized in Node.js, Spring Boot, Next.js, PostgreSQL, AWS, and AI integrations, you can download my resume <Link className="font-medium text-cyan-300 underline-offset-4 transition-colors hover:text-cyan-200 hover:underline" href={String(process.env.RESUME_DOWNLOAD_LINK)}>here</Link>.
+                                Specialized in Node.js, Spring Boot, Next.js, PostgreSQL, AWS, AI-assisted development, and MCP-powered integrations, you can download my resume <Link className="font-medium text-cyan-300 underline-offset-4 transition-colors hover:text-cyan-200 hover:underline" href={String(process.env.RESUME_DOWNLOAD_LINK)}>here</Link>.
                             </p>
 
                             <div className="flex flex-wrap gap-2 pt-1">
@@ -47,6 +47,8 @@ export default function About() {
                                 <TechsCard bgColor="#F1F5F9" text="NextJs" />
                                 <TechsCard bgColor="#336791" text="PostgreSQL" />
                                 <TechsCard bgColor="#FF9900" text="AWS" />
+                                <TechsCard bgColor="#D97706" text="Claude" />
+                                <TechsCard bgColor="#22C55E" text="MCP" />
                             </div>
 
                             <div className="flex flex-wrap gap-3 pt-2">
@@ -71,8 +73,8 @@ export default function About() {
                                     <span>Projects</span>
                                 </div>
                                 <div className="stat-card">
-                                    <strong>AI</strong>
-                                    <span>Driven</span>
+                                    <strong>AI + MCP</strong>
+                                    <span>Workflow</span>
                                 </div>
                             </div>
                         </div>
