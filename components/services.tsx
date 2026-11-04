@@ -10,7 +10,7 @@ export default function Services() {
             <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
                 <div className="flex-1 flex flex-row flex-wrap">
                     <ServiceCard title="Full-Stack Web Developer" className="">
-                        <p className="text-lg">Build high performance APIs</p>
+                        <p className="text-lg">Build high performance APIs and AI-assisted product workflows using Claude, MCP integrations, and modern tooling.</p>
                     </ServiceCard>
                 </div>
                 <div className="flex flex-1 flex-row flex-wrap">

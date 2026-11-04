@@ -16,12 +16,13 @@ export default function Projects() {
                             <ProjectTechsCard text="NextJs"/>
                             <ProjectTechsCard text="Supabase (ORM & MFA)"/>
                             <ProjectTechsCard text="AI SDK"/>
+                            <ProjectTechsCard text="Claude"/>
                             <ProjectTechsCard text="MCP"/>
                             <ProjectTechsCard text="Azure SDK"/>
                             <ProjectTechsCard text="Jira API"/>
                             <ProjectTechsCard text="Docker"/>
                         </div>
-                        <p className="text-base leading-relaxed text-slate-300">Built dynamic client workflow. Secure multi-tenant architecture with AI orchestration.</p>
+                        <p className="text-base leading-relaxed text-slate-300">Built dynamic client workflow. Secure multi-tenant architecture with AI-assisted development and MCP-powered integrations for DevOps and automation.</p>
                     </ProjectCard>
                 </div>
                 <div className="flex-1">
@@ -32,10 +33,11 @@ export default function Projects() {
                             <ProjectTechsCard text="PostgreSQ"/>
                             <ProjectTechsCard text="DataForSEO"/>
                             <ProjectTechsCard text="OpenAI"/>
+                            <ProjectTechsCard text="Claude"/>
                             <ProjectTechsCard text="Gemini"/>
                             <ProjectTechsCard text="LangChain4j"/>
                         </div>
-                        <p className="text-base leading-relaxed text-slate-300">Restructured API orchestration, ensuring robust content generation pipelines.</p>
+                        <p className="text-base leading-relaxed text-slate-300">Restructured API orchestration with AI-assisted coding, Claude, and multi-provider AI routing to ensure robust, scalable content generation pipelines.</p>
                     </ProjectCard>
                 </div>
                 <div className="flex-1">
