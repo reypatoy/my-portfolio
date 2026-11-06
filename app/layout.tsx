@@ -35,6 +35,10 @@ export const metadata: Metadata = {
     "AWS",
     "PostgreSQL",
     "REST API",
+    "Row Level Security",
+    "Multi-Tenancy",
+    "Multi-Tenant Architecture",
+    "AI-Assisted Development",
     "Philippines",
   ],
 

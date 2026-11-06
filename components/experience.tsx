@@ -12,7 +12,7 @@ export default function Experience() {
                     <p className="text-base leading-relaxed text-slate-300">Build and maintain scalable backend APIs using Java Spring Boot and Node.js. Design optimized databases, develop responsive front-end features with React, Vue, and Nuxt (Redux, Pinia), and integrate AI services such as Claude, OpenAI, DataForSEO, AWS, and GCP in Agile environments while using AI to assist coding and accelerate delivery.</p>
                 </ExperienceCard>
                 <ExperienceCard jobTitle= "Software Engineer" company="ITFrontdoor" address="Netherlands" year="November 2025 - April 2026">
-                    <p className="text-base leading-relaxed text-slate-300">Developed an AI-powered chat application using Next.js and Supabase, integrating Claude, AI SDK, and MCP tools to connect and interact with Azure DevOps services. Designed real-time messaging features, implemented backend logic, and built secure integrations for seamless DevOps automation.</p>
+                    <p className="text-base leading-relaxed text-slate-300">Developed an AI-powered chat application using Next.js and Supabase, integrating Claude, AI SDK, and MCP tools to connect and interact with Azure DevOps services. Designed real-time messaging features, implemented backend logic, enforced tenant data isolation with application-level multi-tenancy and Row Level Security, and built secure integrations for seamless DevOps automation.</p>
                 </ExperienceCard>
             </div>
         </section>

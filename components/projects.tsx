@@ -15,6 +15,8 @@ export default function Projects() {
                         <div className="flex flex-wrap gap-2">
                             <ProjectTechsCard text="NextJs"/>
                             <ProjectTechsCard text="Supabase (ORM & MFA)"/>
+                            <ProjectTechsCard text="Row Level Security"/>
+                            <ProjectTechsCard text="Multi-Tenancy"/>
                             <ProjectTechsCard text="AI SDK"/>
                             <ProjectTechsCard text="Claude"/>
                             <ProjectTechsCard text="MCP"/>
@@ -22,7 +24,7 @@ export default function Projects() {
                             <ProjectTechsCard text="Jira API"/>
                             <ProjectTechsCard text="Docker"/>
                         </div>
-                        <p className="text-base leading-relaxed text-slate-300">Built dynamic client workflow. Secure multi-tenant architecture with AI-assisted development and MCP-powered integrations for DevOps and automation.</p>
+                        <p className="text-base leading-relaxed text-slate-300">Built dynamic client workflow. Secure application-level multi-tenant architecture enforced with PostgreSQL Row Level Security (RLS), with AI-assisted development and MCP-powered integrations for DevOps and automation.</p>
                     </ProjectCard>
                 </div>
                 <div className="flex-1">

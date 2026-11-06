@@ -36,7 +36,7 @@ export default function About() {
                             </p>
 
                             <p className="text-base leading-relaxed text-slate-400">
-                                Specialized in Node.js, Spring Boot, Next.js, PostgreSQL, AWS, AI-assisted development, and MCP-powered integrations, you can download my resume <Link className="font-medium text-cyan-300 underline-offset-4 transition-colors hover:text-cyan-200 hover:underline" href={String(process.env.RESUME_DOWNLOAD_LINK)}>here</Link>.
+                                Specialized in Node.js, Spring Boot, Next.js, PostgreSQL, AWS, multi-tenant architecture with Row Level Security, AI-assisted development, and MCP-powered integrations, you can download my resume <Link className="font-medium text-cyan-300 underline-offset-4 transition-colors hover:text-cyan-200 hover:underline" href={String(process.env.RESUME_DOWNLOAD_LINK)}>here</Link>.
                             </p>
 
                             <div className="flex flex-wrap gap-2 pt-1">
