@@ -20,6 +20,8 @@ import Upstash from "./reusables/upstash";
 import AzureDevops from "./reusables/azureDevops";
 import AWS from "./reusables/aws";
 import Vercel from "./reusables/vercel";
+import RowLevelSecurity from "./reusables/rowLevelSecurity";
+import MultiTenancy from "./reusables/multiTenancy";
 
 export default function Skills() {
     return (
@@ -77,7 +79,13 @@ export default function Skills() {
                         <CICD />
                         <Docker />
                         <Upstash /> 
-                        <AzureDevops /> 
+                        <AzureDevops />
+                    </SkillsCard>
+                </div>
+                <div className="flex-1 lg:col-span-2">
+                    <SkillsCard title="Security & Architecture">
+                        <RowLevelSecurity />
+                        <MultiTenancy />
                     </SkillsCard>
                 </div>
             </div>
